@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Admin Log In
+{% endblock %}
+
+{% block main %}
+    <label for="user_id" >User_ID</label>
+    <input type="text" id="user_id" name="user_id"/>
+    <br>
+    <label for="input_phoner" >Phone Number</label>
+    <input type="password" id="password" name="password"/>
+
+    <input type="submit" id="admin_submit" value="Verify"/>
+{% endblock %}

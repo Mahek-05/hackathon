@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Voter Log In
+{% endblock %}
+
+<!-- {% block head %}
+    <script src="{{ url_for('static', filename='js/otp.js') }}"></script>
+    <styles>
+
+    </styles>
+{% endblock %} -->
+
+{% block main %}
+    <form id="voter_login_form" action="/login_voter">
+        <label for="input_aadhar" > Aadhar Number </label>
+        <input type="number" id="input_aadhar" maxlength="12" name="aadhar_no"/>
+        <br>
+        <label for="input_phoner" > Phone Number (linked to aadhar) </label>
+        <input type="tel" id="input_phone" maxlength="10" name="phone_no"/>
+        <input type="submit" id="voter_submit" value="Login"/>
+    </form>
+    <!-- <div id="phoneverify">
+        <form id="otp_verify_form">
+            <label for="otp"> OTP </label>
+            <input type="password" id="otp" name="otp">
+            <input type="submit" id="otp_submit" value="Verify" onclick="verify()"/>
+        </form>
+    </div> -->
+{% endblock %}
+
+<!-- {% block phoneverify %}
+    
+{% endblock %} -->

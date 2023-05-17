@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    OTP Verfication
+{% endblock %}
+
+{% block main %}
+    <div id="phoneverify">
+        <form id="otp_verify_form" action="/verify">
+            <label for="otp"> OTP </label>
+            <input type="password" id="otp" name="otp">
+            <input type="submit" id="otp_submit" value="Verify"/>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    INDEX
+{% endblock %}
+
+{% block main %}
+    <h3>Login As<h3/>
+        <form method="post" action="/">
+            <input type="submit" value="ADMIN" name="admin"/>
+            <input type="submit" value="VOTER" name="voter" />
+        </form>
+{% endblock %}
